@@ -38,6 +38,7 @@ export default function Home() {
         <span className={`neon-flicker ${styles["neon-flicker"]}`}>s</span>
       </h1>
       <Project />
+      <Project />
     </main>
   );
 }
