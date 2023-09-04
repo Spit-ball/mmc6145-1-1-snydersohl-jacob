@@ -1,0 +1,90 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background: black;
+}
+
+.aboutContainer {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 45% 10% 45%;
+  text-align: center;
+}
+
+.leftSection {
+  display: flex;
+  padding: 50px 20px;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.aboutImage {
+  max-width: 65%;
+  max-height: 65%;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+  animation: neonGlow 4s ease-in-out infinite alternate;
+}
+
+.aboutImage:hover {
+  animation: breathing 8s infinite ease-in-out,
+    neonGlow 4s ease-in-out infinite alternate;
+}
+
+.verticalBar {
+  width: 4px;
+  background-color: #f0f0f0;
+  border-radius: 5px;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.rightSection {
+  padding: 50px 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.middleSection {
+  padding-top: 10%;
+  padding-bottom: 10%;
+  display: flex;
+  flex-direction: column;
+}
+
+.body-copy {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  text-align: justify;
+  padding-right: 15%;
+}
+
+@keyframes neonGlow {
+  0%,
+  100% {
+    box-shadow: 0 0 4px #fff, 0 0 5px #fff, 0 0 8px #fff, 0 0 10px #4caf30,
+      0 0 20px #4caf30, 0 0 22px #4caf30, 0 0 24px #4caf30, 0 0 35px #4caf30;
+  }
+  50% {
+    box-shadow: 0 0 3px #fff, 0 0 4px #fff, 0 0 5px #fff, 0 0 8px #4caf30,
+      0 0 15px #4caf30, 0 0 17px #4caf30, 0 0 18px #4caf30, 0 0 25px #4caf30;
+  }
+}
+
+@keyframes breathing {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

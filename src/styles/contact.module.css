@@ -1,0 +1,42 @@
+.contactContainer {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.contactTitle {
+  font-size: 24px;
+  margin: 20px 0;
+}
+
+.contact-site-links {
+  list-style-type: none;
+  padding: 0;
+}
+
+.contact-link-item {
+  margin-top: 10px;
+}
+
+.neomorph-link {
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  padding: 10px 20px;
+  margin: 10px 0;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2),
+    -4px -4px 8px rgba(255, 255, 255, 0.2);
+  transition: transform 0.2s ease-in-out;
+}
+
+.neomorph-link a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.neomorph-link:hover {
+  transform: scale(1.05);
+}

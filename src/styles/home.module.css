@@ -1,0 +1,132 @@
+.title {
+  font-size: 3rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+@keyframes neonFlicker {
+  0% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 0.7;
+  }
+  50% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 0.7;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* I couldn't think of a better way to do this that's easier to write, so I added 27 divs with the class "neon-flicker" and used nth-child to stagger the animation, haha */
+.neon-flicker:nth-child(1) {
+  animation: neonFlicker 2s infinite alternate 0.2s;
+}
+
+.neon-flicker:nth-child(2) {
+  animation: neonFlicker 2s infinite alternate 0.4s;
+}
+
+.neon-flicker:nth-child(3) {
+  animation: neonFlicker 2s infinite alternate 0.6s;
+}
+
+.neon-flicker:nth-child(4) {
+  animation: neonFlicker 2s infinite alternate 0.8s;
+}
+
+.neon-flicker:nth-child(5) {
+  animation: neonFlicker 2s infinite alternate 1s;
+}
+
+.neon-flicker:nth-child(6) {
+  animation: neonFlicker 2s infinite alternate 1.2s;
+}
+
+.neon-flicker:nth-child(7) {
+  animation: neonFlicker 2s infinite alternate 1.4s;
+}
+
+.neon-flicker:nth-child(8) {
+  animation: neonFlicker 2s infinite alternate 1.6s;
+}
+
+.neon-flicker:nth-child(9) {
+  animation: neonFlicker 2s infinite alternate 1.8s;
+}
+
+.neon-flicker:nth-child(10) {
+  animation: neonFlicker 2s infinite alternate 2s;
+}
+
+.neon-flicker:nth-child(11) {
+  animation: neonFlicker 2s infinite alternate 2.2s;
+}
+
+.neon-flicker:nth-child(12) {
+  animation: neonFlicker 2s infinite alternate 2.4s;
+}
+
+.neon-flicker:nth-child(13) {
+  animation: neonFlicker 2s infinite alternate 2.6s;
+}
+
+.neon-flicker:nth-child(14) {
+  animation: neonFlicker 2s infinite alternate 2.8s;
+}
+
+.neon-flicker:nth-child(15) {
+  animation: neonFlicker 2s infinite alternate 3s;
+}
+
+.neon-flicker:nth-child(16) {
+  animation: neonFlicker 2s infinite alternate 3.2s;
+}
+
+.neon-flicker:nth-child(17) {
+  animation: neonFlicker 2s infinite alternate 3.4s;
+}
+
+.neon-flicker:nth-child(18) {
+  animation: neonFlicker 2s infinite alternate 3.6s;
+}
+
+.neon-flicker:nth-child(19) {
+  animation: neonFlicker 2s infinite alternate 3.8s;
+}
+
+.neon-flicker:nth-child(20) {
+  animation: neonFlicker 2s infinite alternate 4s;
+}
+
+.neon-flicker:nth-child(21) {
+  animation: neonFlicker 2s infinite alternate 4.2s;
+}
+
+.neon-flicker:nth-child(22) {
+  animation: neonFlicker 2s infinite alternate 4.4s;
+}
+
+.neon-flicker:nth-child(23) {
+  animation: neonFlicker 2s infinite alternate 4.6s;
+}
+
+.neon-flicker:nth-child(24) {
+  animation: neonFlicker 2s infinite alternate 4.8s;
+}
+
+.neon-flicker:nth-child(25) {
+  animation: neonFlicker 2s infinite alternate 5s;
+}
+
+.neon-flicker:nth-child(26) {
+  animation: neonFlicker 2s infinite alternate 5.2s;
+}
+
+.neon-flicker:nth-child(27) {
+  animation: neonFlicker 2s infinite alternate 5.4s;
+}
