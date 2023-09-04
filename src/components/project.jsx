@@ -1,6 +1,8 @@
 import React from "react";
 import styles from "../styles/project.module.css";
 
+{
+  /*}
 const projects = [
   {
     title: "Project 1: Just Spitballin'!",
@@ -39,6 +41,38 @@ export default function Project() {
             </div>
           </div>
         ))}
+      </div>
+      <div className={styles.rightSection}></div>
+    </div>
+  );
+} */
+}
+
+{
+  /* above is the original code, below is my attempt at making it work with the new test file...I wrote the above before trying to run a test and realized with that implementation it wouldnt pass, though it seems to be more scalable despite having to write far more code, haha. */
+}
+export default function Project(props) {
+  return (
+    <div className={styles.projectContainer}>
+      <div className={styles.leftSection}></div>
+      <div className={styles.middleSection}>
+        <div className={styles.projectNum}>
+          <h3 className={styles.projectTitle}>{props.title}</h3>
+          <br></br>
+          <p className={styles.projectDescription}>{props.description}</p>
+          <br></br>
+          <div className={styles.linkBtn}>
+            {props.link && (
+              <a
+                className={styles.projectLink}
+                href={props.link}
+                target="_blank"
+              >
+                View this project
+              </a>
+            )}
+          </div>
+        </div>
       </div>
       <div className={styles.rightSection}></div>
     </div>
